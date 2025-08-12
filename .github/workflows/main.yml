@@ -14,9 +14,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
+      - name: create package
+        run: npm init
+        
       - name: Install dependencies
-        working-directory: ./frontend
         run: npm install
 
 
