@@ -1,5 +1,4 @@
-
-name: Node.js CI
+name: Node installation
 
 on: push
 
@@ -18,12 +17,8 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./frontend
-        run: 
-          npm init
-          npm install
+        run: npm install
 
-      - name: Run build
-        run: npm build
 
       - name: Run tests
         run: npm test
